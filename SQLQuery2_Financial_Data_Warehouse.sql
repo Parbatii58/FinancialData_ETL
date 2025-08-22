@@ -49,6 +49,12 @@ CREATE TABLE Suppliers
 	Phone VARCHAR(25)
 );
 
+-- Add anoter column 'Amount_USD' for amount in USD
+ALTER TABLE [dbo].[Financial_transactions]
+ADD Amount_USD FLOAT;
+
+--ALTER TABLE [dbo].[Financial_transactions] DROP COLUMN Amount_USD;
+
 SELECT * FROM Financial_transactions
 
 SELECT * FROM Exchange_rates
