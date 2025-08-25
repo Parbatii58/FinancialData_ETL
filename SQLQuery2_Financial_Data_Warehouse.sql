@@ -55,6 +55,12 @@ ADD Amount_USD FLOAT;
 
 --ALTER TABLE [dbo].[Financial_transactions] DROP COLUMN Amount_USD;
 
+ALTER TABLE Financial_transactions
+ADD Supplier_contact_name VARCHAR(100) NULL,
+	Supplier_phones VARCHAR(25) NULL
+
+
+
 SELECT * FROM Financial_transactions
 
 SELECT * FROM Exchange_rates
