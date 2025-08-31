@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{7F6BF721-F60C-79A3-2B3F-B1A7435189B2}|FinancialDataWarehouse\\FinancialDataWarehouse.dtproj|C:\\Users\\amara\\OneDrive\\Documents\\SQL Server Management Studio\\BusinessData_Integration\\FinancialDataWarehouse\\FinancialDataWarehouse\\FinancialTransactions.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
       "RelativeMoniker": "D:0:0:{7F6BF721-F60C-79A3-2B3F-B1A7435189B2}|FinancialDataWarehouse\\FinancialDataWarehouse.dtproj|solutionrelative:FinancialDataWarehouse\\FinancialTransactions.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F6BF721-F60C-79A3-2B3F-B1A7435189B2}|FinancialDataWarehouse\\FinancialDataWarehouse.dtproj|C:\\Users\\amara\\OneDrive\\Documents\\SQL Server Management Studio\\BusinessData_Integration\\FinancialDataWarehouse\\FinancialDataWarehouse\\Project.params||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{7F6BF721-F60C-79A3-2B3F-B1A7435189B2}|FinancialDataWarehouse\\FinancialDataWarehouse.dtproj|solutionrelative:FinancialDataWarehouse\\Project.params||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +18,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Project.params [Design]",
+              "DocumentMoniker": "C:\\Users\\amara\\OneDrive\\Documents\\SQL Server Management Studio\\BusinessData_Integration\\FinancialDataWarehouse\\FinancialDataWarehouse\\Project.params",
+              "RelativeDocumentMoniker": "FinancialDataWarehouse\\Project.params",
+              "ToolTip": "C:\\Users\\amara\\OneDrive\\Documents\\SQL Server Management Studio\\BusinessData_Integration\\FinancialDataWarehouse\\FinancialDataWarehouse\\Project.params [Design]",
+              "RelativeToolTip": "FinancialDataWarehouse\\Project.params [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-27T16:10:39.53Z",
+              "EditorCaption": " [Design]"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,

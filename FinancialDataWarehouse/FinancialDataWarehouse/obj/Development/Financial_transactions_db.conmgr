@@ -3,6 +3,8 @@
   DTS:ObjectName="Financial_transactions_db"
   DTS:DTSID="{979035C2-7FE1-4D06-B83F-828EEC9657AC}"
   DTS:CreationName="OLEDB">
+  <DTS:PropertyExpression
+    DTS:Name="ServerName">@[$Project::Financial_transactions_db_ServerName]</DTS:PropertyExpression>
   <DTS:ObjectData>
     <DTS:ConnectionManager
       DTS:ConnectRetryCount="1"
