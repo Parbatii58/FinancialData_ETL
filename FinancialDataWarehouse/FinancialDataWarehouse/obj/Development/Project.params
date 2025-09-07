@@ -43,31 +43,10 @@
     </SSIS:Properties>
   </SSIS:Parameter>
   <SSIS:Parameter
-    SSIS:Name="MissingSupplier_ConnectionString">
-    <SSIS:Properties>
-      <SSIS:Property
-        SSIS:Name="ID">{cc064ae1-44c8-4d90-bec6-b27e413316f2}</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="CreationName"></SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="Description"></SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="Required">0</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="Sensitive">0</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="Value">C:\Users\amara\OneDrive\Documents\SQL Server Management Studio\BusinessData_Integration\Data\MissingSupplier.csv</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="DataType">18</SSIS:Property>
-    </SSIS:Properties>
-  </SSIS:Parameter>
-  <SSIS:Parameter
     SSIS:Name="ExcelExchange_rates_ExcelFilePath">
     <SSIS:Properties>
       <SSIS:Property
-        SSIS:Name="ID">{76bdf71e-d238-4564-b6a8-c6921437c0f7}</SSIS:Property>
+        SSIS:Name="ID">{46d13038-0a8f-41b3-843d-7c8b67fa19c2}</SSIS:Property>
       <SSIS:Property
         SSIS:Name="CreationName"></SSIS:Property>
       <SSIS:Property
@@ -79,16 +58,16 @@
       <SSIS:Property
         SSIS:Name="Sensitive">0</SSIS:Property>
       <SSIS:Property
-        SSIS:Name="Value">C:\Users\amara\OneDrive\Documents\SQL Server Management Studio\BusinessData_Integration\Data\Exchange_rates.xlsx</SSIS:Property>
+        SSIS:Name="Value">C:\DATA\Exchange_rates.xlsx</SSIS:Property>
       <SSIS:Property
         SSIS:Name="DataType">18</SSIS:Property>
     </SSIS:Properties>
   </SSIS:Parameter>
   <SSIS:Parameter
-    SSIS:Name="CSVSuppliers_ConnectionString">
+    SSIS:Name="MissingSupplier_ConnectionString">
     <SSIS:Properties>
       <SSIS:Property
-        SSIS:Name="ID">{7d761d56-e170-40ca-a4df-eec213da76be}</SSIS:Property>
+        SSIS:Name="ID">{c426ec77-adeb-4680-80ee-a8dce271f34d}</SSIS:Property>
       <SSIS:Property
         SSIS:Name="CreationName"></SSIS:Property>
       <SSIS:Property
@@ -100,7 +79,28 @@
       <SSIS:Property
         SSIS:Name="Sensitive">0</SSIS:Property>
       <SSIS:Property
-        SSIS:Name="Value">C:\Users\amara\OneDrive\Documents\SQL Server Management Studio\BusinessData_Integration\Data\Suppliers - Sheet1.csv</SSIS:Property>
+        SSIS:Name="Value">C:\DATA\MissingSupplier.csv</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="DataType">18</SSIS:Property>
+    </SSIS:Properties>
+  </SSIS:Parameter>
+  <SSIS:Parameter
+    SSIS:Name="Suppliers_ConnectionString">
+    <SSIS:Properties>
+      <SSIS:Property
+        SSIS:Name="ID">{f726aa09-d14a-4eea-b555-6845f8f73ab9}</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="CreationName"></SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Description"></SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Required">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Sensitive">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Value">C:\DATA\Suppliers - Sheet1.csv</SSIS:Property>
       <SSIS:Property
         SSIS:Name="DataType">18</SSIS:Property>
     </SSIS:Properties>

@@ -11,92 +11,32 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="FinancialTransactions"
   DTS:PackageType="5"
-  DTS:VersionBuild="50"
-  DTS:VersionGUID="{CA2CAA1A-E021-41F1-8DAC-1FDDB26D1005}">
+  DTS:VersionBuild="69"
+  DTS:VersionGUID="{2547CA3F-1D47-4274-AD70-668559198A7E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[CSV Suppliers]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{6EA5E766-4647-4E4B-BE58-908AAE120EEC}"
-      DTS:ObjectName="CSV Suppliers">
-      <DTS:PropertyExpression
-        DTS:Name="ConnectionString">@[$Project::CSVSuppliers_ConnectionString]</DTS:PropertyExpression>
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1033"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\amara\OneDrive\Documents\SQL Server Management Studio\BusinessData_Integration\Data\Suppliers - Sheet1.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Supplier_id"
-              DTS:DTSID="{1759BBC5-2E67-4973-A2F8-3810A1E924C7}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Supplier_name"
-              DTS:DTSID="{72A17352-05E4-4198-9092-4BFECF57F9F7}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Contact_name"
-              DTS:DTSID="{8927CBFC-DA13-4998-921E-829DF6F3694B}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Phone"
-              DTS:DTSID="{9F00158B-4105-4D27-BB60-6FE006B96D95}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Excel Exchange_rates]"
       DTS:CreationName="EXCEL"
-      DTS:DTSID="{CA5B5AC6-99A9-4185-93A1-D0272382BBFF}"
+      DTS:DTSID="{B89FDA6F-ED05-45C1-8638-F85EEC6F5CC5}"
       DTS:ObjectName="Excel Exchange_rates">
       <DTS:PropertyExpression
         DTS:Name="ExcelFilePath">@[$Project::ExcelExchange_rates_ExcelFilePath]</DTS:PropertyExpression>
-      <DTS:PropertyExpression
-        DTS:Name="ServerName">@[$Project::ExcelExchange_rates_ServerName]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\amara\OneDrive\Documents\SQL Server Management Studio\BusinessData_Integration\Data\Exchange_rates.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\DATA\Exchange_rates.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[MissingSupplier]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{8F3F3934-14F8-4DD3-A424-6C860332C1F8}"
+      DTS:DTSID="{608F4646-171F-4FE5-8849-04038FB13D01}"
       DTS:ObjectName="MissingSupplier">
       <DTS:PropertyExpression
-        DTS:Name="ConnectionString">@[$Project::MissingSupplier_ConnectionString1]</DTS:PropertyExpression>
+        DTS:Name="ConnectionString">@[$Project::MissingSupplier_ConnectionString]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -105,7 +45,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\amara\OneDrive\Documents\SQL Server Management Studio\BusinessData_Integration\Data\MissingSupplier.csv">
+          DTS:ConnectionString="C:\DATA\MissingSupplier.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -113,7 +53,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Customer_id"
-              DTS:DTSID="{1582161E-D74B-4414-AFC1-A99E5AE6C7E3}"
+              DTS:DTSID="{9D08790B-19CC-423B-83F4-570547878865}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -121,7 +61,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Transaction_id"
-              DTS:DTSID="{169D9274-D832-4F0E-B3C7-6A1D27DDF649}"
+              DTS:DTSID="{F135F852-3D38-4583-90B4-4069F3BB81CB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -130,7 +70,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Supplier_name"
-              DTS:DTSID="{2A4D55E6-239A-4549-9D4E-0A78D036E4F5}"
+              DTS:DTSID="{BAF2CD5A-ED3E-40C7-A53D-FE60C4EA393B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -138,7 +78,7 @@
               DTS:DataType="133"
               DTS:TextQualified="True"
               DTS:ObjectName="Transaction_date"
-              DTS:DTSID="{3786C2B5-4075-4CDF-B8B3-D4F720EBDCEE}"
+              DTS:DTSID="{4FDA9D8B-58F7-42AE-8D15-530CFCBAA1A9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -148,7 +88,7 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="Amount"
-              DTS:DTSID="{823EF20E-4F0A-4B15-9445-3CDAAD6D5C67}"
+              DTS:DTSID="{AD085701-C9D4-442B-A9DD-5A0DCC8985E3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -157,7 +97,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Currency"
-              DTS:DTSID="{D5542883-3596-4240-8B3B-B5467E8B03AD}"
+              DTS:DTSID="{DF6881D7-8A46-4E8B-8BE6-9489D7DA5A79}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -166,7 +106,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Customer_name"
-              DTS:DTSID="{CF7D2867-B4E5-4287-A9B7-4506C69B0E0C}"
+              DTS:DTSID="{94F55A04-163C-4E25-B717-0252CBB38C71}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -175,7 +115,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Customer_email"
-              DTS:DTSID="{808F2B19-6B35-48AE-8033-90D2D8448BCD}"
+              DTS:DTSID="{FD3937D4-0ABB-43A0-B6DD-0A0C39696D6C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -184,7 +124,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Customer_Phone"
-              DTS:DTSID="{436C3100-B92D-46C8-B607-C949771E5781}"
+              DTS:DTSID="{6747DDAA-46B5-4F4D-97E3-A11F7F79F903}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -192,7 +132,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="Exchange_rate"
-              DTS:DTSID="{94DFE8A2-FC31-4A63-9660-0F27503CCF82}"
+              DTS:DTSID="{174320D2-B5EB-4D22-97E4-3D4D8A8C9A43}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -200,7 +140,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="Amount_USD"
-              DTS:DTSID="{CA7B03D8-5C6C-480B-B931-E695C369F950}"
+              DTS:DTSID="{F19937A9-0A91-4831-A9F2-256B06B3C52D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -209,7 +149,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Supplier_contact_name"
-              DTS:DTSID="{B86623F0-CDA2-428C-818B-06291323C256}"
+              DTS:DTSID="{DD4A33E2-D458-4725-8F12-D6BA1EC1B860}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -218,7 +158,65 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Supplier_phone"
-              DTS:DTSID="{9DAD4585-8ACF-4EAB-9C90-A1A336224A1D}"
+              DTS:DTSID="{17DB09AE-298E-4F99-AD61-21FA972091F4}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Suppliers]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{3C7B9E18-76D2-404A-859E-305202C9006F}"
+      DTS:ObjectName="Suppliers">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[$Project::Suppliers_ConnectionString]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\DATA\Suppliers - Sheet1.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Supplier_id"
+              DTS:DTSID="{1E5F6737-3823-439E-B8CA-99BD0E1A3FA5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Supplier_name"
+              DTS:DTSID="{0D0C0622-483C-4E75-BD25-49C7CBBAE8F4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Contact_name"
+              DTS:DTSID="{47C55E60-55B9-4D4B-A37F-34F17D227037}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Phone"
+              DTS:DTSID="{7DF9FACC-9314-4B13-84ED-37881D41DD56}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -921,12 +919,12 @@ where [refTable].[Supplier_name] = ?</property>
               </outputs>
             </component>
             <component
-              refId="Package\CustomerTransactions\Missing Suppliers"
+              refId="Package\CustomerTransactions\MissingSuppliers"
               componentClassID="Microsoft.FlatFileDestination"
               contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Destination"
               localeId="1033"
-              name="Missing Suppliers"
+              name="MissingSuppliers"
               version="1">
               <properties>
                 <property
@@ -945,178 +943,178 @@ where [refTable].[Supplier_name] = ?</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\CustomerTransactions\Missing Suppliers.Connections[FlatFileConnection]"
+                  refId="Package\CustomerTransactions\MissingSuppliers.Connections[FlatFileConnection]"
                   connectionManagerID="Package.ConnectionManagers[MissingSupplier]"
                   connectionManagerRefId="Package.ConnectionManagers[MissingSupplier]"
                   name="FlatFileConnection" />
               </connections>
               <inputs>
                 <input
-                  refId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input]"
+                  refId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input]"
                   hasSideEffects="true"
                   name="Flat File Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].Columns[Customer_id]"
+                      refId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].Columns[Customer_id]"
                       cachedDataType="i4"
                       cachedName="Customer_id"
-                      externalMetadataColumnId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].ExternalColumns[Customer_id]"
+                      externalMetadataColumnId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].ExternalColumns[Customer_id]"
                       lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[Customer_id]" />
                     <inputColumn
-                      refId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].Columns[Transaction_id]"
+                      refId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].Columns[Transaction_id]"
                       cachedDataType="i4"
                       cachedName="Transaction_id"
-                      externalMetadataColumnId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].ExternalColumns[Transaction_id]"
+                      externalMetadataColumnId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].ExternalColumns[Transaction_id]"
                       lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[Transaction_id]" />
                     <inputColumn
-                      refId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].Columns[Supplier_name]"
+                      refId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].Columns[Supplier_name]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Supplier_name"
-                      externalMetadataColumnId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].ExternalColumns[Supplier_name]"
+                      externalMetadataColumnId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].ExternalColumns[Supplier_name]"
                       lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[Supplier_name]" />
                     <inputColumn
-                      refId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].Columns[Transaction_date]"
+                      refId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].Columns[Transaction_date]"
                       cachedDataType="dbDate"
                       cachedName="Transaction_date"
-                      externalMetadataColumnId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].ExternalColumns[Transaction_date]"
+                      externalMetadataColumnId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].ExternalColumns[Transaction_date]"
                       lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[Transaction_date]" />
                     <inputColumn
-                      refId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].Columns[Amount]"
+                      refId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].Columns[Amount]"
                       cachedDataType="numeric"
                       cachedName="Amount"
                       cachedPrecision="10"
                       cachedScale="2"
-                      externalMetadataColumnId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].ExternalColumns[Amount]"
+                      externalMetadataColumnId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].ExternalColumns[Amount]"
                       lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[Amount]" />
                     <inputColumn
-                      refId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].Columns[Currency]"
+                      refId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].Columns[Currency]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="10"
                       cachedName="Currency"
-                      externalMetadataColumnId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].ExternalColumns[Currency]"
+                      externalMetadataColumnId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].ExternalColumns[Currency]"
                       lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[Currency]" />
                     <inputColumn
-                      refId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].Columns[Customer_name]"
+                      refId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].Columns[Customer_name]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Customer_name"
-                      externalMetadataColumnId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].ExternalColumns[Customer_name]"
+                      externalMetadataColumnId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].ExternalColumns[Customer_name]"
                       lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[Customer_name]" />
                     <inputColumn
-                      refId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].Columns[Customer_email]"
+                      refId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].Columns[Customer_email]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="100"
                       cachedName="Customer_email"
-                      externalMetadataColumnId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].ExternalColumns[Customer_email]"
+                      externalMetadataColumnId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].ExternalColumns[Customer_email]"
                       lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[Customer_email]" />
                     <inputColumn
-                      refId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].Columns[Customer_Phone]"
+                      refId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].Columns[Customer_Phone]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="20"
                       cachedName="Customer_Phone"
-                      externalMetadataColumnId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].ExternalColumns[Customer_Phone]"
+                      externalMetadataColumnId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].ExternalColumns[Customer_Phone]"
                       lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[Customer_Phone]" />
                     <inputColumn
-                      refId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].Columns[Exchange_rate]"
+                      refId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].Columns[Exchange_rate]"
                       cachedDataType="r8"
                       cachedName="Exchange_rate"
-                      externalMetadataColumnId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].ExternalColumns[Exchange_rate]"
+                      externalMetadataColumnId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].ExternalColumns[Exchange_rate]"
                       lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[Exchange_rate]" />
                     <inputColumn
-                      refId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].Columns[Amount_USD]"
+                      refId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].Columns[Amount_USD]"
                       cachedDataType="r8"
                       cachedName="Amount_USD"
-                      externalMetadataColumnId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].ExternalColumns[Amount_USD]"
+                      externalMetadataColumnId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].ExternalColumns[Amount_USD]"
                       lineageId="Package\CustomerTransactions\Create Amount_USD.Outputs[Derived Column Output].Columns[Amount_USD]" />
                     <inputColumn
-                      refId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].Columns[Supplier_contact_name]"
+                      refId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].Columns[Supplier_contact_name]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="100"
                       cachedName="Supplier_contact_name"
-                      externalMetadataColumnId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].ExternalColumns[Supplier_contact_name]"
+                      externalMetadataColumnId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].ExternalColumns[Supplier_contact_name]"
                       lineageId="Package\CustomerTransactions\Lookup Suppliers.Outputs[Lookup Match Output].Columns[Supplier_contact_name]" />
                     <inputColumn
-                      refId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].Columns[Supplier_phone]"
+                      refId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].Columns[Supplier_phone]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="25"
                       cachedName="Supplier_phone"
-                      externalMetadataColumnId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].ExternalColumns[Supplier_phone]"
+                      externalMetadataColumnId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].ExternalColumns[Supplier_phone]"
                       lineageId="Package\CustomerTransactions\Lookup Suppliers.Outputs[Lookup Match Output].Columns[Supplier_phone]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].ExternalColumns[Customer_id]"
+                      refId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].ExternalColumns[Customer_id]"
                       dataType="i4"
                       name="Customer_id" />
                     <externalMetadataColumn
-                      refId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].ExternalColumns[Transaction_id]"
+                      refId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].ExternalColumns[Transaction_id]"
                       dataType="i4"
                       name="Transaction_id" />
                     <externalMetadataColumn
-                      refId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].ExternalColumns[Supplier_name]"
+                      refId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].ExternalColumns[Supplier_name]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Supplier_name" />
                     <externalMetadataColumn
-                      refId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].ExternalColumns[Transaction_date]"
+                      refId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].ExternalColumns[Transaction_date]"
                       dataType="dbDate"
                       name="Transaction_date" />
                     <externalMetadataColumn
-                      refId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].ExternalColumns[Amount]"
+                      refId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].ExternalColumns[Amount]"
                       dataType="numeric"
                       name="Amount"
                       precision="10"
                       scale="2" />
                     <externalMetadataColumn
-                      refId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].ExternalColumns[Currency]"
+                      refId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].ExternalColumns[Currency]"
                       codePage="1252"
                       dataType="str"
                       length="10"
                       name="Currency" />
                     <externalMetadataColumn
-                      refId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].ExternalColumns[Customer_name]"
+                      refId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].ExternalColumns[Customer_name]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Customer_name" />
                     <externalMetadataColumn
-                      refId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].ExternalColumns[Customer_email]"
+                      refId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].ExternalColumns[Customer_email]"
                       codePage="1252"
                       dataType="str"
                       length="100"
                       name="Customer_email" />
                     <externalMetadataColumn
-                      refId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].ExternalColumns[Customer_Phone]"
+                      refId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].ExternalColumns[Customer_Phone]"
                       codePage="1252"
                       dataType="str"
                       length="20"
                       name="Customer_Phone" />
                     <externalMetadataColumn
-                      refId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].ExternalColumns[Exchange_rate]"
+                      refId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].ExternalColumns[Exchange_rate]"
                       dataType="r8"
                       name="Exchange_rate" />
                     <externalMetadataColumn
-                      refId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].ExternalColumns[Amount_USD]"
+                      refId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].ExternalColumns[Amount_USD]"
                       dataType="r8"
                       name="Amount_USD" />
                     <externalMetadataColumn
-                      refId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].ExternalColumns[Supplier_contact_name]"
+                      refId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].ExternalColumns[Supplier_contact_name]"
                       codePage="1252"
                       dataType="str"
                       length="100"
                       name="Supplier_contact_name" />
                     <externalMetadataColumn
-                      refId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input].ExternalColumns[Supplier_phone]"
+                      refId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input].ExternalColumns[Supplier_phone]"
                       codePage="1252"
                       dataType="str"
                       length="25"
@@ -2042,7 +2040,7 @@ ON t.Customer_id = c.Customer_id;</property>
               startId="Package\CustomerTransactions\Multicast.Outputs[Multicast Output 2]" />
             <path
               refId="Package\CustomerTransactions.Paths[NullSupplier]"
-              endId="Package\CustomerTransactions\Missing Suppliers.Inputs[Flat File Destination Input]"
+              endId="Package\CustomerTransactions\MissingSuppliers.Inputs[Flat File Destination Input]"
               name="NullSupplier"
               startId="Package\CustomerTransactions\Split Null Suppliers.Outputs[NullSupplier]" />
             <path
@@ -2536,7 +2534,7 @@ ON t.Customer_id = c.Customer_id;</property>
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Phone"
-                      lineageId="Package\Suppliers\Flat File Source- Suppliers.Outputs[Flat File Source Output].Columns[Phone]" />
+                      lineageId="Package\Suppliers\Flat File Source.Outputs[Flat File Source Output].Columns[Phone]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -2563,7 +2561,7 @@ ON t.Customer_id = c.Customer_id;</property>
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Suppliers\Flat File Source- Suppliers.Outputs[Flat File Source Output].Columns[Phone]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Suppliers\Flat File Source.Outputs[Flat File Source Output].Columns[Phone]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -2676,7 +2674,7 @@ ON t.Customer_id = c.Customer_id;</property>
                       cachedLength="50"
                       cachedName="Supplier_id"
                       externalMetadataColumnId="Package\Suppliers\Destination- Warehouse Suppliers.Inputs[OLE DB Destination Input].ExternalColumns[Supplier_id]"
-                      lineageId="Package\Suppliers\Flat File Source- Suppliers.Outputs[Flat File Source Output].Columns[Supplier_id]" />
+                      lineageId="Package\Suppliers\Flat File Source.Outputs[Flat File Source Output].Columns[Supplier_id]" />
                     <inputColumn
                       refId="Package\Suppliers\Destination- Warehouse Suppliers.Inputs[OLE DB Destination Input].Columns[Supplier_name]"
                       cachedCodepage="1252"
@@ -2684,7 +2682,7 @@ ON t.Customer_id = c.Customer_id;</property>
                       cachedLength="50"
                       cachedName="Supplier_name"
                       externalMetadataColumnId="Package\Suppliers\Destination- Warehouse Suppliers.Inputs[OLE DB Destination Input].ExternalColumns[Supplier_name]"
-                      lineageId="Package\Suppliers\Flat File Source- Suppliers.Outputs[Flat File Source Output].Columns[Supplier_name]" />
+                      lineageId="Package\Suppliers\Flat File Source.Outputs[Flat File Source Output].Columns[Supplier_name]" />
                     <inputColumn
                       refId="Package\Suppliers\Destination- Warehouse Suppliers.Inputs[OLE DB Destination Input].Columns[Contact_name]"
                       cachedCodepage="1252"
@@ -2692,7 +2690,7 @@ ON t.Customer_id = c.Customer_id;</property>
                       cachedLength="50"
                       cachedName="Contact_name"
                       externalMetadataColumnId="Package\Suppliers\Destination- Warehouse Suppliers.Inputs[OLE DB Destination Input].ExternalColumns[Contact_name]"
-                      lineageId="Package\Suppliers\Flat File Source- Suppliers.Outputs[Flat File Source Output].Columns[Contact_name]" />
+                      lineageId="Package\Suppliers\Flat File Source.Outputs[Flat File Source Output].Columns[Contact_name]" />
                     <inputColumn
                       refId="Package\Suppliers\Destination- Warehouse Suppliers.Inputs[OLE DB Destination Input].Columns[Phone25]"
                       cachedCodepage="1252"
@@ -2755,12 +2753,12 @@ ON t.Customer_id = c.Customer_id;</property>
               </outputs>
             </component>
             <component
-              refId="Package\Suppliers\Flat File Source- Suppliers"
+              refId="Package\Suppliers\Flat File Source"
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
               localeId="1033"
-              name="Flat File Source- Suppliers"
+              name="Flat File Source"
               usesDispositions="true"
               version="1">
               <properties>
@@ -2775,25 +2773,25 @@ ON t.Customer_id = c.Customer_id;</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Suppliers\Flat File Source- Suppliers.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[CSV Suppliers]"
-                  connectionManagerRefId="Package.ConnectionManagers[CSV Suppliers]"
+                  refId="Package\Suppliers\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Suppliers]"
+                  connectionManagerRefId="Package.ConnectionManagers[Suppliers]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
                 <output
-                  refId="Package\Suppliers\Flat File Source- Suppliers.Outputs[Flat File Source Output]"
+                  refId="Package\Suppliers\Flat File Source.Outputs[Flat File Source Output]"
                   name="Flat File Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Suppliers\Flat File Source- Suppliers.Outputs[Flat File Source Output].Columns[Supplier_id]"
+                      refId="Package\Suppliers\Flat File Source.Outputs[Flat File Source Output].Columns[Supplier_id]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Suppliers\Flat File Source- Suppliers.Outputs[Flat File Source Output].ExternalColumns[Supplier_id]"
+                      externalMetadataColumnId="Package\Suppliers\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Supplier_id]"
                       length="50"
-                      lineageId="Package\Suppliers\Flat File Source- Suppliers.Outputs[Flat File Source Output].Columns[Supplier_id]"
+                      lineageId="Package\Suppliers\Flat File Source.Outputs[Flat File Source Output].Columns[Supplier_id]"
                       name="Supplier_id"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -2808,14 +2806,14 @@ ON t.Customer_id = c.Customer_id;</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Suppliers\Flat File Source- Suppliers.Outputs[Flat File Source Output].Columns[Supplier_name]"
+                      refId="Package\Suppliers\Flat File Source.Outputs[Flat File Source Output].Columns[Supplier_name]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Suppliers\Flat File Source- Suppliers.Outputs[Flat File Source Output].ExternalColumns[Supplier_name]"
+                      externalMetadataColumnId="Package\Suppliers\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Supplier_name]"
                       length="50"
-                      lineageId="Package\Suppliers\Flat File Source- Suppliers.Outputs[Flat File Source Output].Columns[Supplier_name]"
+                      lineageId="Package\Suppliers\Flat File Source.Outputs[Flat File Source Output].Columns[Supplier_name]"
                       name="Supplier_name"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -2830,14 +2828,14 @@ ON t.Customer_id = c.Customer_id;</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Suppliers\Flat File Source- Suppliers.Outputs[Flat File Source Output].Columns[Contact_name]"
+                      refId="Package\Suppliers\Flat File Source.Outputs[Flat File Source Output].Columns[Contact_name]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Suppliers\Flat File Source- Suppliers.Outputs[Flat File Source Output].ExternalColumns[Contact_name]"
+                      externalMetadataColumnId="Package\Suppliers\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Contact_name]"
                       length="50"
-                      lineageId="Package\Suppliers\Flat File Source- Suppliers.Outputs[Flat File Source Output].Columns[Contact_name]"
+                      lineageId="Package\Suppliers\Flat File Source.Outputs[Flat File Source Output].Columns[Contact_name]"
                       name="Contact_name"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -2852,14 +2850,14 @@ ON t.Customer_id = c.Customer_id;</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Suppliers\Flat File Source- Suppliers.Outputs[Flat File Source Output].Columns[Phone]"
+                      refId="Package\Suppliers\Flat File Source.Outputs[Flat File Source Output].Columns[Phone]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Suppliers\Flat File Source- Suppliers.Outputs[Flat File Source Output].ExternalColumns[Phone]"
+                      externalMetadataColumnId="Package\Suppliers\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Phone]"
                       length="50"
-                      lineageId="Package\Suppliers\Flat File Source- Suppliers.Outputs[Flat File Source Output].Columns[Phone]"
+                      lineageId="Package\Suppliers\Flat File Source.Outputs[Flat File Source Output].Columns[Phone]"
                       name="Phone"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -2877,25 +2875,25 @@ ON t.Customer_id = c.Customer_id;</property>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Suppliers\Flat File Source- Suppliers.Outputs[Flat File Source Output].ExternalColumns[Supplier_id]"
+                      refId="Package\Suppliers\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Supplier_id]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Supplier_id" />
                     <externalMetadataColumn
-                      refId="Package\Suppliers\Flat File Source- Suppliers.Outputs[Flat File Source Output].ExternalColumns[Supplier_name]"
+                      refId="Package\Suppliers\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Supplier_name]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Supplier_name" />
                     <externalMetadataColumn
-                      refId="Package\Suppliers\Flat File Source- Suppliers.Outputs[Flat File Source Output].ExternalColumns[Contact_name]"
+                      refId="Package\Suppliers\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Contact_name]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Contact_name" />
                     <externalMetadataColumn
-                      refId="Package\Suppliers\Flat File Source- Suppliers.Outputs[Flat File Source Output].ExternalColumns[Phone]"
+                      refId="Package\Suppliers\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Phone]"
                       codePage="1252"
                       dataType="str"
                       length="50"
@@ -2903,27 +2901,27 @@ ON t.Customer_id = c.Customer_id;</property>
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Suppliers\Flat File Source- Suppliers.Outputs[Flat File Source Error Output]"
+                  refId="Package\Suppliers\Flat File Source.Outputs[Flat File Source Error Output]"
                   isErrorOut="true"
                   name="Flat File Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Suppliers\Flat File Source- Suppliers.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      refId="Package\Suppliers\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       codePage="1252"
                       dataType="text"
                       description="Flat File Source Error Output Column"
-                      lineageId="Package\Suppliers\Flat File Source- Suppliers.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      lineageId="Package\Suppliers\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       name="Flat File Source Error Output Column" />
                     <outputColumn
-                      refId="Package\Suppliers\Flat File Source- Suppliers.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      refId="Package\Suppliers\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Suppliers\Flat File Source- Suppliers.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Suppliers\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Suppliers\Flat File Source- Suppliers.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\Suppliers\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Suppliers\Flat File Source- Suppliers.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Suppliers\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -2942,7 +2940,7 @@ ON t.Customer_id = c.Customer_id;</property>
               refId="Package\Suppliers.Paths[Flat File Source Output]"
               endId="Package\Suppliers\Data Conversion.Inputs[Data Conversion Input]"
               name="Flat File Source Output"
-              startId="Package\Suppliers\Flat File Source- Suppliers.Outputs[Flat File Source Output]" />
+              startId="Package\Suppliers\Flat File Source.Outputs[Flat File Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -3083,14 +3081,14 @@ ON t.Customer_id = c.Customer_id;</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,63.2666659374373"
+              EndConnector="0,63.266665937437"
               Start="0,0"
-              End="0,55.7666659374373">
+              End="0,55.766665937437">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,55.7666659374373" />
+                    End="0,55.766665937437" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3244,10 +3242,6 @@ ON t.Customer_id = c.Customer_id;</property>
           Id="Package\CustomerTransactions\Multicast"
           TopLeft="328.571410619078,497.238091923415" />
         <NodeLayout
-          Size="160,41.6"
-          Id="Package\CustomerTransactions\Missing Suppliers"
-          TopLeft="577.380920834249,588.095234418956" />
-        <NodeLayout
           Size="190.4,41.6"
           Id="Package\CustomerTransactions\Lookup Exchange_rates"
           TopLeft="237.803017310046,111.799999222557" />
@@ -3301,42 +3295,6 @@ ON t.Customer_id = c.Customer_id;</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\CustomerTransactions.Paths[NullSupplier]"
-          TopLeft="642.323778952778,536.83809220753">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="15.0571418814716,51.2571422114262"
-              Start="0,0"
-              End="15.0571418814716,43.7571422114262">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,21.6285711057131" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,21.6285711057131"
-                    Point2="0,25.6285711057131"
-                    Point3="4,25.6285711057131" />
-                  <mssgle:LineSegment
-                    End="11.0571418814716,25.6285711057131" />
-                  <mssgle:CubicBezierSegment
-                    Point1="11.0571418814716,25.6285711057131"
-                    Point2="15.0571418814716,25.6285711057131"
-                    Point3="15.0571418814716,29.6285711057131" />
-                  <mssgle:LineSegment
-                    End="15.0571418814716,43.7571422114262" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-19.3201204655142,30.6285711057131,53.6973828125,11.609375"
-              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3535,6 +3493,34 @@ ON t.Customer_id = c.Customer_id;</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="157.6,41.6"
+          Id="Package\CustomerTransactions\MissingSuppliers"
+          TopLeft="556.999991700053,588.599993816018" />
+        <EdgeLayout
+          Id="Package\CustomerTransactions.Paths[NullSupplier]"
+          TopLeft="639.061885326416,536.83809220753">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,51.7619016084881"
+              Start="0,0"
+              End="0,44.2619016084881">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,44.2619016084881" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-26.84869140625,16.326263304244,53.6973828125,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -3593,10 +3579,6 @@ ON t.Customer_id = c.Customer_id;</property>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="220.8,41.6"
-          Id="Package\Exchange_rates\Excel Source- Exchange_rates"
-          TopLeft="399.999994039535,86.9999987035988" />
-        <NodeLayout
           Size="268,41.6"
           Id="Package\Exchange_rates\Destination- Warehouse Exchange_rates"
           TopLeft="380.999994322658,370.999994471669" />
@@ -3604,28 +3586,6 @@ ON t.Customer_id = c.Customer_id;</property>
           Size="156,41.6"
           Id="Package\Exchange_rates\Data Conversion"
           TopLeft="430.9999935776,234.999996498227" />
-        <EdgeLayout
-          Id="Package\Exchange_rates.Paths[Excel Source Output]"
-          TopLeft="509.699993808567,128.599998703599">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,106.399997794628"
-              Start="0,0"
-              End="0,98.8999977946278">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,98.8999977946278" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Exchange_rates.Paths[Data Conversion Output]"
           TopLeft="511.999993950129,276.599996498227">
@@ -3648,22 +3608,35 @@ ON t.Customer_id = c.Customer_id;</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="220.8,41.6"
+          Id="Package\Exchange_rates\Excel Source- Exchange_rates"
+          TopLeft="404.166644583975,90.3999995660782" />
+        <EdgeLayout
+          Id="Package\Exchange_rates.Paths[Excel Source Output]"
+          TopLeft="511.783319080787,131.999999566078">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,102.999996932149"
+              Start="0,0"
+              End="0,95.4999969321488">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,95.4999969321488" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Exchange_rates\Excel Source- Exchange_rates">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Exchange_rates\Destination- Warehouse Exchange_rates">
     <Properties>
@@ -3681,7 +3654,7 @@ ON t.Customer_id = c.Customer_id;</property>
     design-time-name="Package\Suppliers">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="236,41.6"
           Id="Package\Suppliers\Destination- Warehouse Suppliers"
@@ -3690,10 +3663,6 @@ ON t.Customer_id = c.Customer_id;</property>
           Size="156,41.6"
           Id="Package\Suppliers\Data Conversion"
           TopLeft="478.999992862344,210.999996855855" />
-        <NodeLayout
-          Size="200.8,41.6"
-          Id="Package\Suppliers\Flat File Source- Suppliers"
-          TopLeft="480.999992832541,72.9999989122153" />
         <EdgeLayout
           Id="Package\Suppliers.Paths[Data Conversion Output]"
           TopLeft="556.999992862344,252.599996855855">
@@ -3725,45 +3694,33 @@ ON t.Customer_id = c.Customer_id;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="151.2,41.6"
+          Id="Package\Suppliers\Flat File Source"
+          TopLeft="484.999992772937,69.9999989569187" />
         <EdgeLayout
           Id="Package\Suppliers.Paths[Flat File Source Output]"
-          TopLeft="581.399992832541,114.599998912215">
+          TopLeft="558.79999281764,111.599998956919">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-24.3999999701978,96.3999979436397"
+              EndConnector="0,99.3999978989362"
               Start="0,0"
-              End="-24.3999999701978,88.8999979436397">
+              End="0,91.8999978989362">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,44.1999989718199" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,44.1999989718199"
-                    Point2="0,48.1999989718199"
-                    Point3="-4,48.1999989718199" />
-                  <mssgle:LineSegment
-                    End="-20.3999999701978,48.1999989718199" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-20.3999999701978,48.1999989718199"
-                    Point2="-24.3999999701978,48.1999989718199"
-                    Point3="-24.3999999701978,52.1999989718199" />
-                  <mssgle:LineSegment
-                    End="-24.3999999701978,88.8999979436397" />
+                    End="0,91.8999978989362" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -3771,6 +3728,19 @@ ON t.Customer_id = c.Customer_id;</property>
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\Suppliers\Destination- Warehouse Suppliers">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Exchange_rates\Excel Source- Exchange_rates">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
