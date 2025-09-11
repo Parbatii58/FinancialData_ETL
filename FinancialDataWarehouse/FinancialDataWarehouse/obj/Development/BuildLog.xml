@@ -2,13 +2,18 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>FinancialDataWarehouse</Name>
-    <LastWriteTime>2025-09-07T17:42:29.6230792Z</LastWriteTime>
+    <LastWriteTime>2025-09-11T12:35:25.8620672Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>FinancialTransactions.dtsx</Name>
       <LastWriteTime>2025-09-07T17:42:22.417523Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>FinancialTransactions_API_USD.dtsx</Name>
+      <LastWriteTime>2025-09-11T13:16:32.4480504Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

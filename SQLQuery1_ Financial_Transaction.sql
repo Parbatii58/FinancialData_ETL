@@ -24,6 +24,19 @@ VALUES
 (3, 103, 'Global Inc', '2024-02-05', 2000.00, 'GBP'),
 (4, 104, 'ABC Corp', '2024-02-10', 500.25, 'USD');
 
+
+--INSERT INTO Financial_transactions (
+--    Transaction_id,
+--    Customer_id,
+--    Supplier_name,
+--    Transaction_Date,
+--    Amount,
+--    Currency
+--)
+--VALUES
+--(5, 105, 'Tuna Tech', '2024-03-25', 1250.00, 'USD')
+
+
 CREATE TABLE Customer_details (
     Customer_id INT PRIMARY KEY,
     Customer_name VARCHAR(50),
